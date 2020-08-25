@@ -1,0 +1,41 @@
+{
+  "name": "variable-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "commit": "npx git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project .",
+    "lint:fix": "npm run lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMWare/variable-parser.git"
+  },
+  "author": "TMUniversal <me@tmuniversal.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TMWare/variable-parser/issues"
+  },
+  "homepage": "https://github.com/TMWare/variable-parser#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@tmuniversal/ts": "^1.0.3",
+    "cz-conventional-changelog": "^3.2.1",
+    "husky": "^4.2.5",
+    "tslib": "^2.0.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm run lint"
+    }
+  }
+}

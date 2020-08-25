@@ -1,0 +1,3 @@
+{
+  "extends": "@tmuniversal/ts/lint"
+}

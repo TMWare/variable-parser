@@ -1,0 +1,17 @@
+.vscode/
+lib/
+src/
+docs/
+examples/
+test/
+node_modules/
+.nyc_output/
+.github/
+.eslintrc.json
+.gitignore
+.gitattributes
+tsconfig.json
+tslint.json
+package-lock.json
+*.tgz
+*.log
