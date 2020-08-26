@@ -2,8 +2,8 @@
 
 <div>
   <p align="center">
-    <a href="https://github.com/tmware/variable-parser/blob/master/package.json#L3">
-      <img src="https://img.shields.io/github/package-json/v/tmware/variable-parser?style=flat" />
+    <a href="https://www.npmjs.com/package/@tmware/variable-parser">
+      <img src="https://img.shields.io/npm/v/@tmware/variable-parser?style=flat" />
     </a>
     <a href="https://github.com/tmware/variable-parser/actions">
       <img src="https://github.com/tmware/variable-parser/workflows/Build/badge.svg" />
@@ -42,18 +42,18 @@ With yarn: `yarn add @tmware/variable-parser`
 
 ### Usage
 
-```JS
+```js
 const VariableParser = require('@tmware/variable-parser')
 
 const YourParser = new VariableParser() // initialize without data
 ```
 
-```JS
+```js
 const YourParser = new VariableParser({ testVariable: 'World', anotherOne: 'Hello', someNumber: 69 })
 // initialize with data
 ```
 
-```JS
+```js
 console.log(YourParser.parse('{anotherOne} {testVariable}! some text to show you that this works. {someNumber}'))
 // => 'Hello World! some text to show you that this works. 69'
 ```
@@ -62,7 +62,7 @@ console.log(YourParser.parse('{anotherOne} {testVariable}! some text to show you
 
 Custom indicators (those things around the variables. default: `{}`)
 
-```JS
+```js
 const YourParser = new VariableParser({ someVariable: 3 }, '[]')
 
 const result = YourParser.parse('[someVariable]')
@@ -76,4 +76,4 @@ console.log(result)
 
 Please refer to the [LICENSE](LICENSE.md) file.
 
-[variable parser]: https://www.npmjs.com/package/@tmware/variable-parser
+[variable parser]: https://github.com/TMWare/variable-parser
