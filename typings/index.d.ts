@@ -13,8 +13,9 @@ declare module '@tmware/variable-parser' {
          * Parse in-string variables
          * @param {Object} data key-value object with variables to parse
          * @param {String} identifiers pair of variable identifiers. defaults to {}
+         * @returns {VariableParser} a new VariableParser instance
          */
-        constructor(data: VariableParserData, identifiers?: string);
+        constructor(data?: VariableParserData, identifiers?: string);
         /**
          * Parse in-string variables.
          * @param {String} input your text

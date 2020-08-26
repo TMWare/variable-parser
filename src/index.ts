@@ -12,10 +12,11 @@ class VariableParser {
    * Parse in-string variables
    * @param {Object} data key-value object with variables to parse
    * @param {String} identifiers pair of variable identifiers. defaults to {}
+   * @returns {VariableParser} a new VariableParser instance
    */
-  public constructor (data: VariableParserData, identifiers: string = '{}') {
+  public constructor (data?: VariableParserData, identifiers: string = '{}') {
     if (identifiers.length !== 2) throw new Error('"identifiers" must have a length of 2')
-    this.data = data
+    this.data = data || {}
     this.identifiers = identifiers
     this.match = new RegExp(`\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`, 'gu')
     this.identifierRegex = new RegExp(`[\\${identifiers[0]}\\${identifiers[1]}]`, 'gu')
