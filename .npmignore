@@ -8,6 +8,7 @@ test/
 node_modules/
 .nyc_output/
 .github/
+.editorconfig
 .eslintrc.json
 .gitignore
 .gitattributes

@@ -4,7 +4,6 @@
   "description": "Parse in-string variables",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
-  "type": "module",
   "scripts": {
     "commit": "npx git-cz",
     "build": "npm run clean && tsc -p ./",
@@ -26,10 +25,7 @@
     "url": "https://github.com/TMWare/variable-parser/issues"
   },
   "homepage": "https://github.com/TMWare/variable-parser#readme",
-  "dependencies": {
-    "lodash.has": "^4.5.2",
-    "lodash.merge": "^4.6.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@tmuniversal/ts": "^1.0.3",
     "@types/lodash.has": "^4.5.6",

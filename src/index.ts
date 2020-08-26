@@ -3,9 +3,6 @@
  * @author TMUniversal <me@tmuniversal.eu>
  */
 
-import has from 'lodash.has'
-import merge from 'lodash.merge'
-
 class VariableParser {
   public data: VariableParserData
   public identifiers: string
@@ -38,7 +35,7 @@ class VariableParser {
     if (!vars || !vars[0]) { return input }
     vars.forEach(element => {
       const key = element.replace(this.identifierRegex, '')
-      if (has(this.data, key)) {
+      if (Object.getOwnPropertyNames(this.data).includes(key)) {
         output = output.replace(`${this.identifiers[0]}${key}${this.identifiers[1]}`, this.data[key].toString())
       }
     })
@@ -61,7 +58,8 @@ class VariableParser {
    * @returns {Object} the new data object
    */
   public updateData (data: VariableParserData): VariableParserData {
-    return merge(this.data, data)
+    this.data = { ...this.data, ...data }
+    return this.data
   }
 }
 
@@ -70,3 +68,4 @@ interface VariableParserData {
 }
 
 module.exports = VariableParser
+module.exports.default = VariableParser
