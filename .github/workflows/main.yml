@@ -1,6 +1,6 @@
 name: Build
 
-on: [ push, pull_request ]
+on: [push, pull_request]
 
 jobs:
   # This workflow contains a single job called "build"
@@ -10,35 +10,34 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v1.4.2
-      with:
-        node-version: 14
-    - run: npm install
-    - run: npm run lint
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.2
+        with:
+          node-version: 14
+      - run: npm install
+      - run: npm run lint
 
   build:
     name: Build
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Install Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
 
-    - name: Test the build
-      run: npm test
-
+      - name: Test the build
+        run: npm test

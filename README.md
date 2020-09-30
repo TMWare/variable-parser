@@ -49,12 +49,20 @@ const YourParser = new VariableParser() // initialize without data
 ```
 
 ```js
-const YourParser = new VariableParser({ testVariable: 'World', anotherOne: 'Hello', someNumber: 69 })
+const YourParser = new VariableParser({
+  testVariable: 'World',
+  anotherOne: 'Hello',
+  someNumber: 69
+})
 // initialize with data
 ```
 
 ```js
-console.log(YourParser.parse('{anotherOne} {testVariable}! some text to show you that this works. {someNumber}'))
+console.log(
+  YourParser.parse(
+    '{anotherOne} {testVariable}! some text to show you that this works. {someNumber}'
+  )
+)
 // => 'Hello World! some text to show you that this works. 69'
 ```
 

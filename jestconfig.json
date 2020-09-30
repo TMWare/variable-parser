@@ -1,9 +1,5 @@
 {
   "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(js?)$",
-  "moduleFileExtensions": [
-    "js",
-    "json",
-    "node"
-  ],
+  "moduleFileExtensions": ["js", "json", "node"],
   "collectCoverage": true
 }

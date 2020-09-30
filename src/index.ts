@@ -15,11 +15,19 @@ class VariableParser {
    * @returns {VariableParser} a new VariableParser instance
    */
   public constructor (data?: VariableParserData, identifiers: string = '{}') {
-    if (identifiers.length !== 2) throw new Error('"identifiers" must have a length of 2')
+    if (identifiers.length !== 2) {
+      throw new Error('"identifiers" must have a length of 2')
+    }
     this.data = data || {}
     this.identifiers = identifiers
-    this.match = new RegExp(`\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`, 'gu')
-    this.identifierRegex = new RegExp(`[\\${identifiers[0]}\\${identifiers[1]}]`, 'gu')
+    this.match = new RegExp(
+      `\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`,
+      'gu'
+    )
+    this.identifierRegex = new RegExp(
+      `[\\${identifiers[0]}\\${identifiers[1]}]`,
+      'gu'
+    )
   }
 
   /**
@@ -33,11 +41,16 @@ class VariableParser {
   public parse (input: string): string {
     let output = String(input)
     const vars = output.match(this.match)
-    if (!vars || !vars[0]) { return input }
+    if (!vars || !vars[0]) {
+      return input
+    }
     vars.forEach(element => {
       const key = element.replace(this.identifierRegex, '')
       if (Object.getOwnPropertyNames(this.data).includes(key)) {
-        output = output.replace(`${this.identifiers[0]}${key}${this.identifiers[1]}`, this.data[key].toString())
+        output = output.replace(
+          `${this.identifiers[0]}${key}${this.identifiers[1]}`,
+          this.data[key].toString()
+        )
       }
     })
     return output
