@@ -26,18 +26,16 @@
   "homepage": "https://github.com/TMWare/variable-parser#readme",
   "dependencies": {},
   "devDependencies": {
-    "@tmuniversal/ts": "^1.1.0",
+    "@tmuniversal/ts": "^1.1.1",
     "@tmware/eslint-config": "^1.0.0",
     "@tmware/prettier-config": "^1.0.1",
-    "@types/node": "^14.6.0",
+    "@types/node": "^14.14.7",
     "cz-conventional-changelog": "^3.2.1",
-    "eslint": "^7.10.0",
+    "eslint": "^7.13.0",
     "eslint-plugin-jest": "^24.0.2",
     "husky": "^4.2.5",
-    "jest": "^26.4.2",
-    "rimraf": "^3.0.2",
-    "tslib": "^2.0.1",
-    "typescript": "^4.0.2"
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2"
   },
   "config": {
     "commitizen": {
