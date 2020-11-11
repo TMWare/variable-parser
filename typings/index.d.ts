@@ -3,6 +3,10 @@
  */
 
 declare module '@tmware/variable-parser' {
+  interface VariableParserData {
+    [variableName: string]: string | number
+  }
+
   class VariableParser {
     data: VariableParserData
     identifiers: string
@@ -36,10 +40,6 @@ declare module '@tmware/variable-parser' {
      * @returns {Object} the new data object
      */
     updateData(data: VariableParserData): VariableParserData
-  }
-
-  interface VariableParserData {
-    [variableName: string]: string | number
   }
 
   export = VariableParser

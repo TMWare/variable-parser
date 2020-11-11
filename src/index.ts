@@ -3,6 +3,10 @@
  * @author TMUniversal <me@tmuniversal.eu>
  */
 
+interface VariableParserData {
+  [variableName: string]: string | number
+}
+
 class VariableParser {
   public data: VariableParserData
   public identifiers: string
@@ -75,10 +79,6 @@ class VariableParser {
     this.data = { ...this.data, ...data }
     return this.data
   }
-}
-
-interface VariableParserData {
-  [variableName: string]: string | number
 }
 
 module.exports = VariableParser
