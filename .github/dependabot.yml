@@ -6,12 +6,10 @@ updates:
       interval: daily
       time: '00:00'
     open-pull-requests-limit: 99
-    reviewers:
-      - tmuniversal
-    assignees:
-      - tmuniversal
     labels:
       - dependencies
+      - automerge
+    target-branch: dev
     commit-message:
       prefix: fix
       prefix-development: chore
