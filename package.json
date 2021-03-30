@@ -13,7 +13,8 @@
     "preversion": "yarn run build && yarn test",
     "prepublishOnly": "yarn run build && yarn test",
     "postversion": "git push && git push --tags",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,15 +28,15 @@
   "homepage": "https://github.com/TMWare/variable-parser#readme",
   "dependencies": {},
   "devDependencies": {
-    "@tmuniversal/ts": "^1.1.1",
-    "@tmware/eslint-config": "^1.0.0",
-    "@tmware/prettier-config": "^1.0.1",
+    "@tmuniversal/ts": "^1.1.2",
+    "@tmware/eslint-config": "^1.1.2",
+    "@tmware/prettier-config": "^1.0.3",
     "@tmware/semantic-release-npm-github-publish": "^1.4.1",
-    "@types/node": "^14.14.7",
-    "cz-conventional-changelog": "^3.2.1",
-    "eslint": "^7.13.0",
-    "eslint-plugin-jest": "^24.0.2",
-    "husky": "^4.2.5",
+    "@types/node": "^14.14.37",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.2"
@@ -43,12 +44,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint:fix && yarn run lint",
-      "pre-push": "yarn run test"
     }
   },
   "prettier": "@tmware/prettier-config"
