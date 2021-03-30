@@ -2,4 +2,4 @@ branch: master
 ci: false
 dryRun: false
 debug: false
-extends: "@tmware/semantic-release-npm-github-publish"
+extends: '@tmware/semantic-release-npm-github-publish'
