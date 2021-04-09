@@ -18,20 +18,14 @@ class VariableParser {
    * @param {String} identifiers pair of variable identifiers. defaults to {}
    * @returns {VariableParser} a new VariableParser instance
    */
-  public constructor (data?: VariableParserData, identifiers: string = '{}') {
+  public constructor(data?: VariableParserData, identifiers: string = '{}') {
     if (identifiers.length !== 2) {
       throw new Error('"identifiers" must have a length of 2')
     }
     this.data = data || {}
     this.identifiers = identifiers
-    this.match = new RegExp(
-      `\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`,
-      'gu'
-    )
-    this.identifierRegex = new RegExp(
-      `[\\${identifiers[0]}\\${identifiers[1]}]`,
-      'gu'
-    )
+    this.match = new RegExp(`\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`, 'gu')
+    this.identifierRegex = new RegExp(`[\\${identifiers[0]}\\${identifiers[1]}]`, 'gu')
   }
 
   /**
@@ -42,7 +36,7 @@ class VariableParser {
    * // => "My app has 69 users."
    * @returns {String} parsed input
    */
-  public parse (input: string): string {
+  public parse(input: string): string {
     let output = String(input)
     const vars = output.match(this.match)
     if (!vars || !vars[0]) {
@@ -51,10 +45,7 @@ class VariableParser {
     vars.forEach(element => {
       const key = element.replace(this.identifierRegex, '')
       if (Object.getOwnPropertyNames(this.data).includes(key)) {
-        output = output.replace(
-          `${this.identifiers[0]}${key}${this.identifiers[1]}`,
-          this.data[key].toString()
-        )
+        output = output.replace(`${this.identifiers[0]}${key}${this.identifiers[1]}`, this.data[key].toString())
       }
     })
     return output
@@ -65,7 +56,7 @@ class VariableParser {
    * @param {Object} data Override data
    * @returns {Object} the new data object
    */
-  public setData (data: VariableParserData): VariableParserData {
+  public setData(data: VariableParserData): VariableParserData {
     this.data = data
     return this.data
   }
@@ -75,7 +66,7 @@ class VariableParser {
    * @param {Object} data Update data
    * @returns {Object} the new data object
    */
-  public updateData (data: VariableParserData): VariableParserData {
+  public updateData(data: VariableParserData): VariableParserData {
     this.data = { ...this.data, ...data }
     return this.data
   }
