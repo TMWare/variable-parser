@@ -4,6 +4,10 @@
   "description": "Parse in-string variables",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./index.esm.mjs"
+  },
   "scripts": {
     "build": "yarn run clean && tsc -p ./",
     "clean": "rimraf dist",
