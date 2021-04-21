@@ -1,3 +1,21 @@
+## [1.1.4](https://github.com/TMWare/variable-parser/compare/v1.1.3...v1.1.4) (2021-04-21)
+
+
+### Bug Fixes
+
+* **export:** fix commonjs exports ([b12a0d5](https://github.com/TMWare/variable-parser/commit/b12a0d511f5600a556194676b539812550e46e35))
+* **package:** define files to be packed ([807c65a](https://github.com/TMWare/variable-parser/commit/807c65ad90fea6592e8d743830863f24b5608bf1))
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 7.23.0 to 7.24.0 ([#110](https://github.com/TMWare/variable-parser/issues/110)) ([63e71ab](https://github.com/TMWare/variable-parser/commit/63e71abc8a0a41284626c75607b2f0d8cb282a9d))
+* **dev-deps:** upgrade all dependencies ([42054d6](https://github.com/TMWare/variable-parser/commit/42054d6bdeeebda908c28189f264d603a3e01529))
+* **lint:** migrate to @tmware/eslint-config-typescript for linting ([442ce63](https://github.com/TMWare/variable-parser/commit/442ce63a0d9f27ce560599050b462e2994130f23))
+* **merge:** merge changes from dev into master ([#115](https://github.com/TMWare/variable-parser/issues/115)) ([f6ed1c8](https://github.com/TMWare/variable-parser/commit/f6ed1c8f65ae29a557e4b83088cc8d1ed9a55a2b))
+* **ts:** disable source maps ([381a589](https://github.com/TMWare/variable-parser/commit/381a589a91162af0f06572e4b0bd2e7b5eb158f4))
+* **types:** update module exports ([60b8ff7](https://github.com/TMWare/variable-parser/commit/60b8ff7646f7bb0f77b2b25d820e1208e6e88486))
+
 ## [1.1.3](https://github.com/TMWare/variable-parser/compare/v1.1.2...v1.1.3) (2021-04-09)
 
 
