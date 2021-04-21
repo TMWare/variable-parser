@@ -71,4 +71,6 @@ export class VariableParser {
   }
 }
 
-export default VariableParser
+module.exports = VariableParser
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+module.exports.default = VariableParser
