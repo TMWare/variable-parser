@@ -8,6 +8,11 @@
     "require": "./dist/index.js",
     "import": "./index.esm.mjs"
   },
+  "files": [
+    "dist",
+    "typings",
+    "index.esm.js"
+  ],
   "scripts": {
     "build": "yarn run clean && tsc -p ./",
     "clean": "rimraf dist",
