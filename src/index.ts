@@ -23,7 +23,7 @@ export class VariableParser {
     }
     this.data = data ?? {}
     this.identifiers = identifiers
-    this.match = new RegExp(`\\${this.identifiers[0]}\\w+\\${this.identifiers[1]}`, 'gu')
+    this.match = new RegExp(`\\${this.identifiers[0]}[^\\${this.identifiers[0]}\\${this.identifiers[1]}]+\\${this.identifiers[1]}`, 'gu')
     this.identifierRegex = new RegExp(`[\\${identifiers[0]}\\${identifiers[1]}]`, 'gu')
   }
 
@@ -37,7 +37,7 @@ export class VariableParser {
    */
   public parse (input: string): string {
     let output = String(input)
-    const vars = this.match.exec(output)
+    const vars = output.match(this.match)
     if (!vars || !vars[0]) {
       return input
     }
