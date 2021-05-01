@@ -1,3 +1,33 @@
+# [1.2.0](https://github.com/TMWare/variable-parser/compare/v1.1.4...v1.2.0) (2021-05-01)
+
+
+### Bug Fixes
+
+* use proper matching function ([5e97bad](https://github.com/TMWare/variable-parser/commit/5e97badf2fbb99038222a304562205433a2493c2))
+
+
+### Chores
+
+* **dev-deps:** upgrade all dev dependencies ([0eb2106](https://github.com/TMWare/variable-parser/commit/0eb210620a3f233231eda2cfb7f2a5b010c049f4))
+* **license:** update copyright year ([638f7cc](https://github.com/TMWare/variable-parser/commit/638f7cc21bcea3261f8d6815030f64958f5be39c))
+* **lint-fix:** ignore false positive ([490209d](https://github.com/TMWare/variable-parser/commit/490209d65268d3aa54f3c8520a08864bede4fbb9))
+* **merge:** merge bug fix for multi-variable inputs ([#120](https://github.com/TMWare/variable-parser/issues/120)) ([4405ddc](https://github.com/TMWare/variable-parser/commit/4405ddccdd2a8d8c1d5558dcc365cd96cea7918a))
+
+
+### Features
+
+* add support for multi-character variable identifiers ([841c8fb](https://github.com/TMWare/variable-parser/commit/841c8fb83e0ce1bc8b9c9aa616e56478c7b5a328))
+
+
+### Styles
+
+* run prettier and eslint ([ad4a0f9](https://github.com/TMWare/variable-parser/commit/ad4a0f988ef2b4e784f06ac19f71bcf20cf4b90c))
+
+
+### Tests
+
+* create more comprehensive tests ([adee1f1](https://github.com/TMWare/variable-parser/commit/adee1f1ebba05727c4b7f6e3081d4fbb4ff79c6e))
+
 ## [1.1.4](https://github.com/TMWare/variable-parser/compare/v1.1.3...v1.1.4) (2021-04-21)
 
 
