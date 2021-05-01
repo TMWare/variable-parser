@@ -14,6 +14,18 @@ describe('variable-parser', () => {
     expect(text).toBe('testVar is 55')
   })
 
+  test('.parse should successfully parse the same variable multiple times', () => {
+    TestParser.setData({ testVar: 55 })
+    const text = TestParser.parse('testVar is {testVar}, again, it\'s {testVar}')
+    expect(text).toBe('testVar is 55, again, it\'s 55')
+  })
+
+  test('.parse should successfully parse multiple variables', () => {
+    TestParser.setData({ testVar: 55, test2: 't' })
+    const text = TestParser.parse('testVar is {testVar}, test2 is {test2}')
+    expect(text).toBe('testVar is 55, test2 is t')
+  })
+
   test('.parse should not fail on invalid variables', () => {
     const text = TestParser.parse('{doesNotExist} test')
     expect(text).toBe('{doesNotExist} test')
@@ -24,7 +36,7 @@ describe('variable-parser', () => {
     expect(text).toBe('test')
   })
 
-  test('should parse with custom variable identifiers', () => {
+  test('.parse should parse with custom variable identifiers', () => {
     const AnotherTestParser = new VariableParser({ testVar: 1 }, '[]')
     expect(AnotherTestParser.parse('[testVar] test')).toBe('1 test')
   })
