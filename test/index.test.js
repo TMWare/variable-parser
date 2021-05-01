@@ -16,8 +16,8 @@ describe('variable-parser', () => {
 
   test('.parse should successfully parse the same variable multiple times', () => {
     TestParser.setData({ testVar: 55 })
-    const text = TestParser.parse('testVar is {testVar}, again, it\'s {testVar}')
-    expect(text).toBe('testVar is 55, again, it\'s 55')
+    const text = TestParser.parse("testVar is {testVar}, again, it's {testVar}")
+    expect(text).toBe("testVar is 55, again, it's 55")
   })
 
   test('.parse should successfully parse multiple variables', () => {

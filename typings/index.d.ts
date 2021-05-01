@@ -22,7 +22,7 @@ declare module '@tmware/variable-parser' {
      *
      *  or a tuple of two strings. The two strings will be the identifiers.
      */
-    constructor(data?: VariableParserData, identifiers?: string | [begin: string, end: string])
+    constructor (data?: VariableParserData, identifiers?: string | [begin: string, end: string])
     /**
      * Parse in-string variables.
      * @param {String} input your text
@@ -31,19 +31,19 @@ declare module '@tmware/variable-parser' {
      * // => "My app has 69 users."
      * @returns {String} parsed input
      */
-    parse(input: string): string
+    parse (input: string): string
     /**
      * Set the data object, this is an override.
      * @param {Object} data Override data
      * @returns {Object} the new data object
      */
-    setData(data: VariableParserData): VariableParserData
+    setData (data: VariableParserData): VariableParserData
     /**
      * Update/add properties (uses merge)
      * @param {Object} data Update data
      * @returns {Object} the new data object
      */
-    updateData(data: VariableParserData): VariableParserData
+    updateData (data: VariableParserData): VariableParserData
   }
 
   export default VariableParser

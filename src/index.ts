@@ -27,7 +27,10 @@ export class VariableParser {
   public constructor (data?: VariableParserData, identifiers: string | [begin: string, end: string] = '{}') {
     this.data = data ?? {}
     this.identifiers = [identifiers[0], identifiers[1]]
-    this.match = new RegExp(`${escape(this.identifiers[0])}[^${escape(this.identifiers[0])}${escape(this.identifiers[1])}]+${escape(this.identifiers[1])}`, 'gu')
+    this.match = new RegExp(
+      `${escape(this.identifiers[0])}[^${escape(this.identifiers[0])}${escape(this.identifiers[1])}]+${escape(this.identifiers[1])}`,
+      'gu'
+    )
     this.identifierRegex = new RegExp(`[${escape(this.identifiers[0])}${escape(this.identifiers[1])}]`, 'gu')
   }
 
