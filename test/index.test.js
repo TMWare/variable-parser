@@ -41,13 +41,8 @@ describe('variable-parser', () => {
     expect(AnotherTestParser.parse('[testVar] test')).toBe('1 test')
   })
 
-  test('wrong identifiers should fail', () => {
-    let error
-    try {
-      const AnotherTestParser = new VariableParser({}, '{{}}')
-    } catch (err) {
-      error = err || new Error()
-    }
-    expect(error.message || error).toBe('"identifiers" must have a length of 2')
+  test('Parser should allow for multiple-character variable identifiers', () => {
+    const AnotherTestParser = new VariableParser({ testVar: 1 }, ['{{', '}}'])
+    expect(AnotherTestParser.parse('{{testVar}} test')).toBe('1 test')
   })
 })

@@ -7,24 +7,28 @@ export interface VariableParserData {
   [variableName: string]: string | number
 }
 
+const escape = (string: string): string => string.replace(/./g, '\\$&')
+
 export class VariableParser {
   public data!: VariableParserData
-  public identifiers!: string
+  public identifiers!: [begin: string, end: string]
   public match!: RegExp
   public identifierRegex!: RegExp
   /**
    * Parse in-string variables
    * @param {Object} data key-value object with variables to parse
-   * @param {String} identifiers pair of variable identifiers. defaults to {}
+   * @param {String|String[]} identifiers pair of characters to identify variables by. (default: '{}')
+   *
+   *  this can be either a String,
+   *  resulting in the first two characters becoming the identifiers,
+   *
+   *  or a tuple of two strings. The two strings will be the identifiers.
    */
-  public constructor (data?: VariableParserData, identifiers: string = '{}') {
-    if (identifiers.length !== 2) {
-      throw new Error('"identifiers" must have a length of 2')
-    }
+  public constructor (data?: VariableParserData, identifiers: string | [begin: string, end: string] = '{}') {
     this.data = data ?? {}
-    this.identifiers = identifiers
-    this.match = new RegExp(`\\${this.identifiers[0]}[^\\${this.identifiers[0]}\\${this.identifiers[1]}]+\\${this.identifiers[1]}`, 'gu')
-    this.identifierRegex = new RegExp(`[\\${identifiers[0]}\\${identifiers[1]}]`, 'gu')
+    this.identifiers = [identifiers[0], identifiers[1]]
+    this.match = new RegExp(`${escape(this.identifiers[0])}[^${escape(this.identifiers[0])}${escape(this.identifiers[1])}]+${escape(this.identifiers[1])}`, 'gu')
+    this.identifierRegex = new RegExp(`[${escape(this.identifiers[0])}${escape(this.identifiers[1])}]`, 'gu')
   }
 
   /**
