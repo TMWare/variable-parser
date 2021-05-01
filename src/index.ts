@@ -37,6 +37,8 @@ export class VariableParser {
    */
   public parse (input: string): string {
     let output = String(input)
+    // behaves differently with 'global' flag, which is provided here.
+    // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
     const vars = output.match(this.match)
     if (!vars || !vars[0]) {
       return input
