@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/TMWare/variable-parser/compare/v1.2.0...v1.2.1) (2021-06-18)
+
+
+### Chores
+
+* **deps:** bump normalize-url from 6.0.0 to 6.0.1 ([#140](https://github.com/TMWare/variable-parser/issues/140)) ([27ed52e](https://github.com/TMWare/variable-parser/commit/27ed52e2f24c2464994ef48f070cc5574692f410))
+* **deps:** bump trim-newlines from 3.0.0 to 3.0.1 ([#141](https://github.com/TMWare/variable-parser/issues/141)) ([80b67ab](https://github.com/TMWare/variable-parser/commit/80b67abe82d756104ca68b9f9def8185a3d5b733))
+* **deps:** bump ws from 7.4.5 to 7.4.6 ([#132](https://github.com/TMWare/variable-parser/issues/132)) ([7453497](https://github.com/TMWare/variable-parser/commit/74534976d01979609bffa2d38fc8641473d12888))
+
 # [1.2.0](https://github.com/TMWare/variable-parser/compare/v1.1.4...v1.2.0) (2021-05-01)
 
 
