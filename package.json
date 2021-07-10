@@ -38,18 +38,18 @@
   "dependencies": {},
   "devDependencies": {
     "@tmuniversal/ts": "^1.2.1",
-    "@tmware/eslint-config-typescript": "^1.0.7",
+    "@tmware/eslint-config-typescript": "^1.0.8",
     "@tmware/prettier-config": "^1.0.3",
-    "@tmware/semantic-release-npm-github-publish": "^1.4.3",
-    "@types/node": "^16.0.2",
+    "@tmware/semantic-release-npm-github-publish": "^1.4.4",
+    "@types/node": "^16.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.25.0",
+    "eslint": "^7.30.0",
     "eslint-plugin-jest": "^24.3.6",
     "husky": "^7.0.1",
-    "jest": "^27.0.4",
+    "jest": "^27.0.6",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.4.2",
-    "typescript": "^4.2.4"
+    "semantic-release": "^17.4.4",
+    "typescript": "^4.3.5"
   },
   "config": {
     "commitizen": {
