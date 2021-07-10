@@ -1,3 +1,30 @@
+## [1.2.2](https://github.com/TMWare/variable-parser/compare/v1.2.1...v1.2.2) (2021-07-10)
+
+
+### Chores
+
+* **deps:** upgrade all dependencies ([124931a](https://github.com/TMWare/variable-parser/commit/124931a009f8d417ed0f452eefe28edf0df4a3d0))
+* **deps-dev:** bump @types/node from 15.0.1 to 15.3.1 ([#126](https://github.com/TMWare/variable-parser/issues/126)) ([04468bb](https://github.com/TMWare/variable-parser/commit/04468bb0b2c2af0c085728e4aec896b51d7071cf))
+* **deps-dev:** bump @types/node from 15.12.2 to 16.0.2 ([#157](https://github.com/TMWare/variable-parser/issues/157)) ([beeaa82](https://github.com/TMWare/variable-parser/commit/beeaa822d4b33029e1e375ce36c7621eef227340))
+* **deps-dev:** bump @types/node from 15.3.1 to 15.12.2 ([#139](https://github.com/TMWare/variable-parser/issues/139)) ([19c7e33](https://github.com/TMWare/variable-parser/commit/19c7e33b7f1fe6861e6b2500a8b48ee3346a1c5a))
+* **deps-dev:** bump @types/node from 16.0.2 to 16.3.1 ([#158](https://github.com/TMWare/variable-parser/issues/158)) ([5448448](https://github.com/TMWare/variable-parser/commit/5448448abf5842ac8abcfc270885c2345c93f750))
+* **deps-dev:** bump eslint from 7.25.0 to 7.26.0 ([#122](https://github.com/TMWare/variable-parser/issues/122)) ([db9403e](https://github.com/TMWare/variable-parser/commit/db9403e2e02794c649efbab5dfca0e0d37bfd145))
+* **deps-dev:** bump eslint from 7.26.0 to 7.28.0 ([#138](https://github.com/TMWare/variable-parser/issues/138)) ([6ef9c4e](https://github.com/TMWare/variable-parser/commit/6ef9c4eacc9944ee13e5280d8fd7cea04880d701))
+* **deps-dev:** bump eslint from 7.28.0 to 7.30.0 ([#154](https://github.com/TMWare/variable-parser/issues/154)) ([fb967e4](https://github.com/TMWare/variable-parser/commit/fb967e41228269163b68c6254198113e0f63be13))
+* **deps-dev:** bump husky from 6.0.0 to 7.0.1 ([#155](https://github.com/TMWare/variable-parser/issues/155)) ([c62d929](https://github.com/TMWare/variable-parser/commit/c62d92902a5d7ece0293a0c06f61356ee0299e8a))
+* **deps-dev:** bump jest from 26.6.3 to 27.0.4 ([#135](https://github.com/TMWare/variable-parser/issues/135)) ([722ebf0](https://github.com/TMWare/variable-parser/commit/722ebf04be3b0e09b967fe3e3092b9fe9b3de593))
+* **deps-dev:** bump jest from 27.0.4 to 27.0.6 ([#149](https://github.com/TMWare/variable-parser/issues/149)) ([2df3f1c](https://github.com/TMWare/variable-parser/commit/2df3f1cbd72e72e0306ebc7cf080441f179ce0b9))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([#123](https://github.com/TMWare/variable-parser/issues/123)) ([217fe83](https://github.com/TMWare/variable-parser/commit/217fe8308ef22c9673f138a2590089422a88c4ae))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([#142](https://github.com/TMWare/variable-parser/issues/142)) ([7fcdd89](https://github.com/TMWare/variable-parser/commit/7fcdd89b24b5a6023eb09b933ddcd2cb722e08ec))
+* **deps-dev:** bump typescript from 4.2.4 to 4.3.4 ([#144](https://github.com/TMWare/variable-parser/issues/144)) ([0895e1a](https://github.com/TMWare/variable-parser/commit/0895e1ac2c2b3afacc87dec392ee34b80aa96d4d))
+* **deps-dev:** bump typescript from 4.3.4 to 4.3.5 ([#150](https://github.com/TMWare/variable-parser/issues/150)) ([50dee40](https://github.com/TMWare/variable-parser/commit/50dee40f99aeb2e122a50bfef9dd84c3c973453c))
+* **merge:** bump all dependencies ([#159](https://github.com/TMWare/variable-parser/issues/159)) ([7155411](https://github.com/TMWare/variable-parser/commit/7155411a1c8d5f6ecb1e3cd1f214a0300803486c))
+
+
+### Miscellaneous
+
+* Merge branch 'master' into dev ([0e88220](https://github.com/TMWare/variable-parser/commit/0e88220fec05883949d95bd3379269118b61847c))
+
 ## [1.2.1](https://github.com/TMWare/variable-parser/compare/v1.2.0...v1.2.1) (2021-06-18)
 
 
