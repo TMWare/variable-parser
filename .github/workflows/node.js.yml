@@ -34,9 +34,15 @@ jobs:
       - name: Install Dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
         run: yarn install
+        
+      - name: Set up codecov
+        run: npm install codecov -g
 
       - name: Build
         run: yarn run build
 
       - name: Test the build
         run: yarn test
+
+      - name: Send Reports to Codecov
+        run: codecov
