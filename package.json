@@ -41,6 +41,7 @@
     "@tmware/eslint-config-typescript": "^1.0.8",
     "@tmware/prettier-config": "^1.0.3",
     "@tmware/semantic-release-npm-github-publish": "^1.4.4",
+    "@types/jest": "^27.0.1",
     "@types/node": "^16.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.30.0",
