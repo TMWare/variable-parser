@@ -27,6 +27,9 @@
     <a href="https://github.com/tmware/variable-parser/blob/stable/LICENSE.md">
       <img src="https://img.shields.io/github/license/tmware/variable-parser.svg?style=flat">
     </a>
+    <a href="https://gitnft.quine.sh/app/commits/list/repo/variable-parser">
+      <img src="https://img.shields.io/badge/%F0%9F%94%AE-Open%20in%20GitNFT-darkviolet?style=flat" />
+    </a>
   </p>
 </div>
 
