@@ -42,7 +42,7 @@
     "@tmware/prettier-config": "^1.0.3",
     "@tmware/semantic-release-npm-github-publish": "^1.4.4",
     "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.10",
+    "@types/node": "^17.0.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-plugin-jest": "^24.4.0",
